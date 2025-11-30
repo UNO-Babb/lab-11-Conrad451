@@ -1,0 +1,11 @@
+For this assignment, I added the metric for total shoppers. Even if our idle time is higher, more cashiers will always process more customers. 
+As grocery shopping is necessary, wait time as a metric is important but not as important as throughput. The more customers we serve, the more money is made.
+Additionally, I worked as a cashier at Walmart in highschool, and at least three times every Saturday a customer would eclipse the total item transaction limit, which was somewhere in the 150-200 items range.
+
+I modified the total item range from the base value to 5-200, which while incredibly unrealistic, giving each shopper an equal chance to max out the register, I figure is fine for this assignment.
+The large range also let's the numbers move around.
+
+Anything less than 6 cashiers will not serve all customers available. At 5, we have usually less than 10 customers left which would typically shoved through anyways. 
+
+I then switched to a Poisson distrubtion to more accurately model how many people show up to a grocery store. This really had no affect due to the increased randomess. The simplicity of the simulation
+assumptions means that all I get out of Poisson is that we'll need anywhere from 4-9 cashiers to serve all customers. This is more in-line with traditional statistics and provides a lower and upper bound.
